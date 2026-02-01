@@ -35,7 +35,7 @@ test.describe('managerCanOpenAccount', ()=>{
         */
     });
 
-    test('Assert manager can add new customer', async ({page}) => {
+    test('Assert manager can open a new account for a customer', async ({page}) => {
         const openAccountPage = new OpenAccountPage(page)
         const customersListPage = new CustomersListPage(page)
 

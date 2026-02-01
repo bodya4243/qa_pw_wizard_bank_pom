@@ -40,5 +40,5 @@ test('Assert manager can add new customer', async ({page}) => {
     await customersListPage.assertAddedCustomerFirstNameIsPresent(firstName)
     await customersListPage.assertAddedCustomerLastNameIsPresent(lastName)
     await customersListPage.assertAddedCustomerPostCodeIsPresent(postCode)
-    await customersListPage.assertAccountNumberIsAbsent()
+    await customersListPage.assertAccountNumberIsAbsent(firstName)
 });
